@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Web Browser Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/open_web_page"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"/>
+
+        <EditText
+            android:id="@+id/etWebUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_web_url"
+            android:inputType="textUri"
+            android:padding="8dp"/>
+
+        <Button
+            android:id="@+id/btnOpenWeb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_open_web"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Email Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/send_email"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="24dp"/>
+
+        <EditText
+            android:id="@+id/etEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_email_address"
+            android:inputType="textEmailAddress"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/etEmailSubject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_email_subject"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/etEmailBody"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="@string/hint_email_body"
+            android:inputType="textMultiLine"
+            android:padding="8dp"
+            android:gravity="top"/>
+
+        <Button
+            android:id="@+id/btnSendEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_send_email"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Share Text Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/share_text"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="24dp"/>
+
+        <EditText
+            android:id="@+id/etShareText"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="@string/hint_share_text"
+            android:inputType="textMultiLine"
+            android:padding="8dp"
+            android:gravity="top"/>
+
+        <Button
+            android:id="@+id/btnShareText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_share_text"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Additional Intents Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/additional_actions"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="24dp"/>
+
+        <Button
+            android:id="@+id/btnDialPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_dial_phone"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/btnOpenMaps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_open_maps"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+</ScrollView>
